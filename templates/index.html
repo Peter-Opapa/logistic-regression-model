@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logistic Regression Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        h2 { text-align: center; }
+        input[type="number"] { width: 100%; padding: 8px; margin: 6px 0; }
+        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; border-radius: 4px; }
+        .result { margin-top: 20px; text-align: center; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Logistic Regression Prediction</h2>
+        <form action="/predict" method="post">
+            <!-- Example: Replace with actual feature names and count -->
+            <input type="number" name="feature1" step="any" placeholder="Feature 1" required>
+            <input type="number" name="feature2" step="any" placeholder="Feature 2" required>
+            <input type="number" name="feature3" step="any" placeholder="Feature 3" required>
+            <!-- Add more inputs as needed for your model -->
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction_text %}
+        <div class="result">{{ prediction_text }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
