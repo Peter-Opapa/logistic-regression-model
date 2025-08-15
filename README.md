@@ -1,5 +1,6 @@
 
-# Breast Cancer Prediction Regression Model
+[![Deploy on Render](https://img.shields.io/badge/Deployed%20on-Render-46a2f1?logo=render)](https://breastcancerprediction-sm7p.onrender.com)
+# Breast Cancer Prediction Logistic Regression Model
 
 ## Overview
 This project provides a robust and user-friendly web application for predicting breast cancer diagnosis (Malignant or Benign) using a logistic regression model. The model is trained on the Wisconsin Breast Cancer Dataset and the app is built with Flask, styled for clarity, and deployed on Render for public access.
