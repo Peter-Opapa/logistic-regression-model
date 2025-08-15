@@ -16,11 +16,37 @@
     <div class="container">
         <h2>Logistic Regression Prediction</h2>
         <form action="/predict" method="post">
-            <!-- Example: Replace with actual feature names and count -->
-            <input type="number" name="feature1" step="any" placeholder="Feature 1" required>
-            <input type="number" name="feature2" step="any" placeholder="Feature 2" required>
-            <input type="number" name="feature3" step="any" placeholder="Feature 3" required>
-            <!-- Add more inputs as needed for your model -->
+            <!-- Enter all model features except id and diagnosis -->
+            <input type="number" name="radius_mean" step="any" placeholder="Radius Mean" required>
+            <input type="number" name="texture_mean" step="any" placeholder="Texture Mean" required>
+            <input type="number" name="perimeter_mean" step="any" placeholder="Perimeter Mean" required>
+            <input type="number" name="area_mean" step="any" placeholder="Area Mean" required>
+            <input type="number" name="smoothness_mean" step="any" placeholder="Smoothness Mean" required>
+            <input type="number" name="compactness_mean" step="any" placeholder="Compactness Mean" required>
+            <input type="number" name="concavity_mean" step="any" placeholder="Concavity Mean" required>
+            <input type="number" name="concave points_mean" step="any" placeholder="Concave Points Mean" required>
+            <input type="number" name="symmetry_mean" step="any" placeholder="Symmetry Mean" required>
+            <input type="number" name="fractal_dimension_mean" step="any" placeholder="Fractal Dimension Mean" required>
+            <input type="number" name="radius_se" step="any" placeholder="Radius SE" required>
+            <input type="number" name="texture_se" step="any" placeholder="Texture SE" required>
+            <input type="number" name="perimeter_se" step="any" placeholder="Perimeter SE" required>
+            <input type="number" name="area_se" step="any" placeholder="Area SE" required>
+            <input type="number" name="smoothness_se" step="any" placeholder="Smoothness SE" required>
+            <input type="number" name="compactness_se" step="any" placeholder="Compactness SE" required>
+            <input type="number" name="concavity_se" step="any" placeholder="Concavity SE" required>
+            <input type="number" name="concave points_se" step="any" placeholder="Concave Points SE" required>
+            <input type="number" name="symmetry_se" step="any" placeholder="Symmetry SE" required>
+            <input type="number" name="fractal_dimension_se" step="any" placeholder="Fractal Dimension SE" required>
+            <input type="number" name="radius_worst" step="any" placeholder="Radius Worst" required>
+            <input type="number" name="texture_worst" step="any" placeholder="Texture Worst" required>
+            <input type="number" name="perimeter_worst" step="any" placeholder="Perimeter Worst" required>
+            <input type="number" name="area_worst" step="any" placeholder="Area Worst" required>
+            <input type="number" name="smoothness_worst" step="any" placeholder="Smoothness Worst" required>
+            <input type="number" name="compactness_worst" step="any" placeholder="Compactness Worst" required>
+            <input type="number" name="concavity_worst" step="any" placeholder="Concavity Worst" required>
+            <input type="number" name="concave points_worst" step="any" placeholder="Concave Points Worst" required>
+            <input type="number" name="symmetry_worst" step="any" placeholder="Symmetry Worst" required>
+            <input type="number" name="fractal_dimension_worst" step="any" placeholder="Fractal Dimension Worst" required>
             <button type="submit">Predict</button>
         </form>
         {% if prediction_text %}
