@@ -1,5 +1,5 @@
 
-# Breast Cancer Prediction Web Application
+# Breast Cancer Prediction Regression Model
 
 ## Overview
 This project provides a robust and user-friendly web application for predicting breast cancer diagnosis (Malignant or Benign) using a logistic regression model. The model is trained on the Wisconsin Breast Cancer Dataset and the app is built with Flask, styled for clarity, and deployed on Render for public access.
